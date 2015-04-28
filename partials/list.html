@@ -28,9 +28,10 @@
 
     <div class="row">
         <h2 class="center_this">These are all really, really good.</h2>
+        <br>
         <div class="col-sm-12">
             <ul class="albumlist">
-                <li class="album_css" ng-repeat="item in sync | filter:{artist:query} | filter: {title:queryAlbum}| orderBy:artistOrder:direction">
+                <li class="album_css" ng-animate="'animate'" ng-repeat="item in sync | filter:{artist:query} | filter: {title:queryAlbum}| orderBy:artistOrder:direction">
                     <a href="#/details/{{ sync.indexOf(item) }}">
                         <img enter="animate" ng-src="images/{{ item.shortname }}_tn.jpg" alt="Photo of {{ item.name }}">
                         <div class="info">

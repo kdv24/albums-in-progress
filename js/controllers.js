@@ -1,17 +1,20 @@
 var artistControllers = angular.module('artistControllers',
-  ['firebase']);
+  ['firebase',
+  'ngAnimate'
+  ]);
 
 artistControllers.controller("FirebaseController",
   ["$scope", "$firebaseArray",
   function($scope, $firebaseArray) {
-    var ref = new Firebase("https://popping-heat-6371.firebaseio.com");
-
-    $scope.sync = $firebaseArray(ref);
+    $scope.albums = AlbumsFactory.albums;
 
     $scope.addAlbum = function() {
-      var message = "";
       var newtitle = $scope.newname;
       var newartist = $scope.newartist;
+      AlbumsFactory.addAlbum(newtitle, newartist);
+      $scope.newname = null;
+      $scope.newartist = null;
+    };
 
       $scope.sync.$add(
         {
@@ -20,12 +23,28 @@ artistControllers.controller("FirebaseController",
         shortname: null,
         description: null
         });
-
-      // $scope.albums
     }
-  }
-]);
 
+    // if ($routeParams.itemID > 0) {
+    //     $scope.prevItem = Number($routeParams.itemId) - 1;
+    // } else {
+    //     $scope.prevItem = $scope.albums.length - 1;
+    // }
+    //
+    // if ($routeParams.itemID < $scope.albums.length - 1) {
+    //     $scope.nextItem = Number($routeParams.itemId) + 1;
+    // } else {
+    //     $scope.nextItem = 0;
+    // }
+}]);
+
+
+artistControllers.controller('DetailsController', ['$scope', '$http','$routeParams', function ($scope, $http, $routeParams, $firebase) {
+$http.get('js/data.json').success(function(data) {
+        $scope.albums = data;
+        $scope.whichItem = $routeParams.itemId;
+    });
+}]);
 
 
 
