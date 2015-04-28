@@ -8,3 +8,17 @@ myApp.factory('AlbumsFactory', function AlbumsFactory() {
     });
 return factory;
 });
+
+
+
+var ref = new Firebase("https://popping-heat-6371.firebaseio.com");
+
+$scope.sync = $firebaseArray(ref);
+
+$scope.sync.$add(
+  {
+  title: newtitle,
+  artist: newartist,
+  shortname: null,
+  description: null
+  });
