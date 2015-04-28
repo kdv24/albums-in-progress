@@ -1,0 +1,95 @@
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+}
+
+
+h2 {
+    font-family: 'Droid Serif', serif;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+body {
+    /*background-color: blue;*/
+
+}
+body::after {
+      content: "";
+      opacity: 0.3;
+
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: fixed;  /*Changed this from 'absolute'*/
+      z-index: -1;
+      background: url(../background_images/headphones.jpg)no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.album_css {
+
+    float: left;
+    padding-left: 20px;
+}
+
+.info {
+    height: 150px;
+    width: 200px;
+    padding: 10px;
+}
+
+.info h2, h3 {
+    opacity: 1;
+    text-align: center;
+}
+
+.center_this {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.center {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.animate {
+    width: 200px;
+    height: 200px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+
+}
+
+.animate:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}

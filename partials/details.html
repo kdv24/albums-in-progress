@@ -1,0 +1,45 @@
+<div class="container" ng-controller = "DetailsController">
+    <div class="row" ng-model="albums">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 center">
+            <h1>{{albums[whichItem].title}}</h1>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+    <div class="row" ng-model="albums">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 center">
+            <h2>{{albums[whichItem].artist}}</h2>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+    <div class="row" ng-model="albums">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 center">
+            <img ng-src="images/{{albums[whichItem].shortname}}_tn.jpg" alt="Photo of {{albums[whichItem].title}}">
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+    <div class="row" ng-model="albums">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 center">
+            <h2>{{albums[whichItem].description}}</h2>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+    <div class="center">
+        <a href="index.html#/list"><button class="btn btn-primary">&laquo; Back to search</button></a>
+    </div>
+</div>

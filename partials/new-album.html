@@ -1,0 +1,11 @@
+<div class="container" ng-controller="FirebaseController">
+    <h1>Add an album to the list</h1>
+    <form ng-submit="addAlbum()" action="#/list">
+        <div class="form-group">
+            <input ng-model="newname" class="form-control" type="text" name="new-album" id="new-album" placeholder="album name"></input>
+            <input ng-model="newartist" class="form-control" type="text" name="new-artist" id="new-artist" placeholder="artist or band name"></input>
+        </div>
+      <button class="btn btn-primary" type="submit">Add</button>
+      <a href="#/list"><button class="btn btn-info">&laquo; go back to list</button></a>
+    </form>
+</div>

@@ -1,0 +1,50 @@
+[
+    {
+        "title": "FLOODLANDSSSSS",
+        "artist": "Sisters of Mercy",
+        "shortname": "Floodlands_SOM"
+    },
+
+    {
+        "title": "Expo 86",
+        "artist": "Wolf Parade",
+        "shortname": "Expo_WP"
+    },
+
+    {
+        "title" : "Renaissance: The Mix Collection",
+        "artist" : "John Digweed",
+        "shortname": "Renaissance_JD"
+    },
+
+    {
+        "title": "Pyromania",
+        "artist": "Def Leppard",
+        "shortname": "Pyromania_DL"
+    },
+
+    {
+        "title": "Heroes",
+        "artist": "Willie Nelson",
+        "shortname": "Heroes_WN"
+    },
+
+    {
+        "title": "The Woods",
+        "artist": "Sleater-Kinney",
+        "shortname": "Woods_SK"
+    },
+
+    {
+        "title": "Out of the Game",
+        "artist": "Rufus Wainwright",
+        "shortname": "Out_RW"
+    },
+
+    {
+        "title": "The ArchAndroid, Suites II and III",
+        "artist": "Janelle Monáe",
+        "shortname": "Arch_JM",
+        "description": "Description of this album. Details about it, interesting stufffffff."
+    }
+]
