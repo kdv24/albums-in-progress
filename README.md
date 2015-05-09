@@ -1,10 +1,12 @@
 # Favorite Albums
-## Liz Beacham and David Eliason
+## Liz Beacham, David Eliason, and Kelly de VRies
 v. 2.0
 
 This app organizes a list of favorite albums and allows the user to sort the list in different ways, as well as search the list by artist or album name. Each album can be viewed individually in its own separate view, where additional information about the artist is also displayed.
 
 In the current version, some sample album cover art images are included with the source code. Album titles and artist names can be added to the list manually by the user. In future versions, a media search API (most likely iTunes) will be incorporated to allow the user to easily add more information, including album cover art, etc.
+
+Some animations were added to the front page to zoom in on album images and pull into focus when user clicks on them.  Next UI work will improve transition to detail page for individual album.
 
 ### Technologies Used
 
